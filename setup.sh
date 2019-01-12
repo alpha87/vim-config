@@ -22,6 +22,12 @@ sudo pip install autopep8 flake8
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # 判断nvim的config是否存在
+
+# 如果已经存在配置会被删除
+if [ -d !/.config/nvim ];then
+      rm -rf ~/.config/nvim
+fi
+
 if [ ! -d ~/.config/nvim ];then
       mkdir -p ~/.config/nvim
 fi
