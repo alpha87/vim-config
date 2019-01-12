@@ -1,6 +1,6 @@
 执行：
 
-`wget -qO- https://raw.githubusercontent.com/alpha87/vim-config/master/setup.sh | sh -x`
+`curl -sLf https://raw.githubusercontent.com/alpha87/vim-config/master/setup.sh | bash`
 
 即可安装配置。
 

@@ -26,7 +26,5 @@ if [ ! -d ~/.config/nvim ];then
       mkdir -p ~/.config/nvim
 fi
 
-cd ~/.config/nvim && git clone https://github.com/alpha87/vim-config.git
-cd vim-config && cp init.vim ~/.config/nvim
-cd ~/.config/nvim && rm -rf vim-config
+git clone https://github.com/alpha87/vim-config.git ~/.config/nvim
 echo "进入nvim 执行 :PlugInstall"
