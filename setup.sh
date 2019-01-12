@@ -15,6 +15,7 @@ echo "正在安装neovim配置文件..."
 #     brew install neovim
 # fi
 
+# 自动格式化代码 flake代码检查
 sudo pip install autopep8 flake8
 
 # 安装vim-plug插件
@@ -27,7 +28,5 @@ fi
 
 cd ~/.config/nvim && git clone https://github.com/alpha87/vim-config.git
 cd vim-config && cp init.vim ~/.config/nvim
-echo "请耐心等待" > alpha87
-vim alpha87 -c "PlugInstall" -c "q" -c "q"
-rm alpha87
-echo "安装完成"
+cd ~/.config/nvim && rm -rf vim-config
+echo "进入nvim 执行 :PlugInstall"
