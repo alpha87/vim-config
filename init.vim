@@ -14,6 +14,7 @@
 " <F11> 高度 +3
 " <F12> 高度 -3
 
+" <leader>l 开启/关闭缩进提示线
 " <leader>i 快速打断点 (自定义方法)
 " <leader>gb git版本提示
 " <leader>y Yapf格式化代码
@@ -158,6 +159,9 @@ set ai
 " Smart indent
 set si
 
+
+" 开启/关闭缩进线, 用于复制
+map <leader>l :IndentLinesToggle<CR>
 
 " 查看git提交
 map <Leader>gb <Esc>:call gitblame#echo()<CR>
