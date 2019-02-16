@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "正在安装neovim配置文件..."
+echo "正在安装 neovim 配置文件..."
 # if which apt-get >/dev/null; then
 # 	sudo apt-get install -y git python-dev python-pip python3-dev python3-pip
 # elif which yum >/dev/null; then
@@ -33,4 +33,7 @@ if [ ! -d ~/.config/nvim ];then
 fi
 
 git clone https://github.com/alpha87/vim-config.git ~/.config/nvim
+git clone https://github.com/morhetz/gruvbox.git ~/.config/nvim
+cd gruvbox && cp colors ~/.config/nvim
+rm -rf ~/.config/nvim/gruvbox
 echo "进入nvim 执行 :PlugInstall"
