@@ -33,7 +33,7 @@ if [ ! -d ~/.config/nvim ];then
 fi
 
 git clone https://github.com/alpha87/vim-config.git ~/.config/nvim
-git clone https://github.com/morhetz/gruvbox.git ~/.config/nvim
-cd gruvbox && cp colors ~/.config/nvim
+git clone https://github.com/morhetz/gruvbox.git ~/.config/nvim/gruvbox
+cp -r ~/.config/nvim/gruvbox/colors ~/.config/nvim
 rm -rf ~/.config/nvim/gruvbox
 echo "进入nvim 执行 :PlugInstall"
