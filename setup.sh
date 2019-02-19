@@ -32,8 +32,16 @@ if [ ! -d ~/.config/nvim ];then
       mkdir -p ~/.config/nvim
 fi
 
+# 拷贝nvim配置
 git clone https://github.com/alpha87/vim-config.git ~/.config/nvim
+
+# 拷贝gruvbox配色
 git clone https://github.com/morhetz/gruvbox.git ~/.config/nvim/gruvbox
+
+# 应用配色
 cp -r ~/.config/nvim/gruvbox/colors ~/.config/nvim
+
+# 删除多余文件
 rm -rf ~/.config/nvim/gruvbox
-echo "进入nvim 执行 :PlugInstall"
+
+echo "➡️ 进入nvim执行 :PlugInstall "
