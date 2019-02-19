@@ -15,8 +15,8 @@ echo "正在安装 neovim 配置文件..."
 #     brew install neovim
 # fi
 
-# 自动格式化代码 flake代码检查
-sudo pip install autopep8 flake8
+# 自动格式化代码 flake代码检查 neovim依赖
+sudo pip install autopep8 flake8 neovim
 
 # 安装vim-plug插件
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
